@@ -17,7 +17,6 @@ body {
 	flex-direction: column;
 	flex-basis: 100%;
 	flex: 1;
-	min-height: 100vh;
 }
 
 .left {
@@ -28,14 +27,24 @@ body {
 }
 
 .right {
+	padding: 1rem;
+
 	background-color: green;
+	min-height: 200vh; /* Remove later */
 }
 
-.sticky {
+.sticky-wrapper {
 	position: sticky;
 	height: auto;
 	top: 0px;
 
+	background-color: orange;
+}
+
+.sticky-content {
+	min-height: 100vh;
 	display: flex;
-	flex-direction: column;
+	align-items: center;
+
+	padding: 2rem;
 }
