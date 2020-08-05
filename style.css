@@ -101,13 +101,32 @@ header h1 {
 	display: none;
 	position: fixed;
 	top: 0px;
-	height: 100%;
+	height: calc(100% - 2rem - 9px); /* adjust for margin, box shadow */
 	left: 0px;
-	width: 48%; /* adjust for scrollbar */
-	overflow: auto;
-	background-color: red;
+	width: calc(50% - 2rem - 17px); /* adjust for margin, scrollbar */
+
+	margin: 1rem;
+	border-left: 4px solid #22278c;
+	padding: 1rem;
+
+	background: #eee;
+	box-shadow: 9px 9px #ddd;
+
+	transition: all 0.4s ease;
+
+	/* hide scrollbar -- https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
-.animate__animated.animate__slideInLeft, .animate__animated.animate__slideOutLeft {
+/* hide scrollbar */
+.project-pullout::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+.animate__animated.animate__slideInLeft,
+.animate__animated.animate__slideOutLeft {
 	--animate-duration: 800ms;
 }
