@@ -9,8 +9,38 @@ body {
 	font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 
+/* Elements */
+i[class^="arrow-"] {
+  border: solid #22278c;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 1px;
+}
+
+i.arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+i.arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+i.arrow-up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+i.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /* General Style */
-p {
+p,
+button {
 	font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 
@@ -21,6 +51,40 @@ h4,
 h5,
 h6 {
 	font-family: "Playfair Display", "Times New Roman", serif;
+}
+
+button {
+	display: inline-block;
+	border: 2px solid #22278c;
+	border-radius: 2px;
+	padding: 0.7rem 1.7rem;
+	margin: 0;
+	background-color: white;
+	color: #22278c;
+
+	font-family: "Playfair Display", "Source Sans Pro", "Arial", sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+
+	cursor: pointer;
+	transition: background 250ms ease-in-out, transform 150ms ease;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+	background: #22278c;
+	color: white;
+
+	outline: 1px solid #fff;
+	outline-offset: -5px;
+}
+
+button:active {
+	transform: scale(0.99);
 }
 
 /* Page Layout */
@@ -97,7 +161,7 @@ header h1 {
 }
 
 /* Project Descriptions */
-.project-pullout {
+.project-panel {
 	display: none;
 	position: fixed;
 	top: 0px;
@@ -121,9 +185,22 @@ header h1 {
 }
 
 /* hide scrollbar */
-.project-pullout::-webkit-scrollbar {
+.project-panel::-webkit-scrollbar {
 	width: 0;
 	height: 0;
+}
+
+button.closeProjectDescriptionButton {
+	border: none;
+	background-color: inherit;
+	padding: 0.7rem 0.5rem;
+	font-size: 1rem;
+}
+button.closeProjectDescriptionButton:hover,
+button.closeProjectDescriptionButton:focus {
+	background: #ddd;
+	color: #22278c;
+	outline: none;
 }
 
 .animate__animated.animate__slideInLeft,
