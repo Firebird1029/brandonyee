@@ -95,3 +95,19 @@ header h1 {
 	font-weight: 600;
 	font-size: 2rem;
 }
+
+/* Project Descriptions */
+.project-pullout {
+	display: none;
+	position: fixed;
+	top: 0px;
+	height: 100%;
+	left: 0px;
+	width: 48%; /* adjust for scrollbar */
+	overflow: auto;
+	background-color: red;
+}
+
+.animate__animated.animate__slideInLeft, .animate__animated.animate__slideOutLeft {
+	--animate-duration: 800ms;
+}
