@@ -29,7 +29,7 @@ function openProjectDescription(projectID) {
 function closeProjectDescription() {
 	const panels = document.querySelectorAll(".project-panel");
 	Array.prototype.forEach.call(panels, function (panel, i) {
-		if (panel.style.display !== "none") {
+		if (panel.style.display === "initial") {
 			animateCSS(panel, "slideOutLeft").then(() => {
 				panel.style.display = "none";
 

@@ -25,9 +25,9 @@
 					<h1>Brandon Yee</h1>
 				</header>
 				<section>
-					<p class="title animate__animated animate__fadeIn"><span style="vertical-align: middle;">&#128075;</span> &nbsp; Hey, I'm Brandon, a student at Yale University studying computer science. I enjoy experimenting with automation, IoT, and different ways technology can uplift others.</p>
+					<p class="title unselectable animate__animated animate__fadeIn"><span style="vertical-align: middle;">&#128075;</span> &nbsp; Hey, I'm Brandon, a student at Yale University studying computer science. I enjoy experimenting with automation, IoT, and different ways technology can uplift others.</p>
 					<p class="spacer"></p>
-					<p class="subtitle animate__animated animate__fadeIn animate__delay-1s">*I am actively seeking internship/employment opportunities for Fall 2020/Spring 2021. Please contact me <a style="opacity: 0.9; cursor: pointer;" onclick="scrollToID('contact')">here.</a></p>
+					<p class="subtitle animate__animated animate__fadeIn animate__delay-1s">*I am actively seeking internship or employment opportunities for Fall 2020/Spring 2021. Please contact me <a style="opacity: 0.9; cursor: pointer;" onclick="scrollToID('contact')">here.</a></p>
 				</section>
 				<footer>
 					<span style="font-size: 2.5rem; color: #22278c;">
@@ -50,14 +50,73 @@
 							</div>
 					</div>
 					<div class="column right" id="projects">
-						<div>
+						<!-- div.project-preview[text-align: center;"]>p.subtitle{n / n}+p.spacer+p>img[src="assets/img/" width="50%"]^p>a[href="#" target="_blank"]{}^p{description}+p.spacer+p>button[onclick="openProjectDescription('')"]{Learn More} -->
+
+						<!-- Distance Thermometer -->
+						<div class="project-preview" style="text-align: center;">
+							<p class="subtitle">1 / 5</p>
+							<p class="spacer"></p>
 							<p>
-								<img src="assets/img/punschedule/sched.png" width="100%">
+								<!-- <img src="assets/img/" alt="" width="50%"> -->
+								<i class="fas fa-thermometer-half fa-5x" style="color: #444;"></i>
+								<p class="spacer"></p>
 							</p>
-							<br>
+							<p><a href="https://distancethermo.com/" target="_blank">distancethermo.com</a></p>
+							<p>Detect and monitor employee temperatures.</p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('distancethermo')">Learn More</button></p>
+						</div>
+
+						<!-- Converge -->
+						<div class="project-preview" style="text-align: center;">
+							<p class="subtitle">2 / 5</p>
+							<p class="spacer"></p>
 							<p>
-								<button onclick="openProjectDescription('punschedule')">Learn More</button>
+								<img src="assets/img/converge.png" alt="" width="50%">
 							</p>
+							<p>
+								<a href="https://convergehawaii.org/" target="_blank">convergehawaii.org</a>
+							</p>
+							<p><span>A church website with live streaming, realtime video conferencing, dynamic rendering via Pug.js, interactive calendar, user-friendly spreadsheet-database system via Airtable, photo gallery, web form validation + sanitization, and responsive design.</span></p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('converge')">Learn More</button></p>
+						</div>
+
+						<!-- Punschedule -->
+						<div class="project-preview" style="text-align: center;">
+							<p class="subtitle">3 / 5</p>
+							<p class="spacer"></p>
+							<p><img src="assets/img/punschedule/sched.png" alt="" width="50%"></p>
+							<!-- <p><a href="https://punschedule.com/" target="_blank">punschedule.com</a></p> -->
+							<p>Punschedule is an easy way for Punahou students to automatically generate, customize, and download their Punahou School distance learning schedules.</p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('punschedule')">Learn More</button></p>
+						</div>
+
+						<!-- Mahalograms -->
+						<div class="project-preview" style="text-align: center;">
+							<p class="subtitle">4 / 5</p>
+							<p class="spacer"></p>
+							<p><img src="assets/img/mahalograms.jpg" alt="" width="50%"></p>
+							<!-- <p><a href="https://mahalograms.punschedule.com/" target="_blank">mahalograms.punschedule.com</a></p> -->
+							<p>Mahalograms allows students to send virtual thank you cards at the end of the school year to fellow students and teachers.</p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('mahalograms')">Learn More</button></p>
+						</div>
+
+						<!-- Face Masks -->
+						<div class="project-preview" style="text-align: center;">
+							<p class="subtitle">5 / 5</p>
+							<p class="spacer"></p>
+							<p>
+								<!-- <img src="assets/img/" alt="" width="50%"> -->
+								<i class="fas fa-head-side-mask fa-5x" style="color: #444;"></i>
+								<p class="spacer"></p>
+							</p>
+							<p><a href="#" target="_blank"></a></p>
+							<p>Give, receive, and exchange face masks with nearby community members.</p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('facemasks')">Learn More</button></p>
 						</div>
 					</div>
 				</section>
@@ -72,7 +131,7 @@
 					</div>
 					<div class="column right" id="certificates" style="min-height: 100vh;">
 						<div>
-							hey
+							<p>Coming soon!</p>
 						</div>
 					</div>
 				</section>
@@ -86,27 +145,29 @@
 							</div>
 					</div>
 					<div class="column right" id="contact" style="min-height: 150vh;">
-						<div style="height: 30vh;"></div>
+						<div class="hidden-touch" style="height: 30vh;"></div>
 						<div>
 							<p>Please reach out to me for a resume or if you have any inquiries. I am always stoked to meet new people and build impactful, cool projects.</p>
 							<p class="spacer"></p>
 							<h1 style="margin-bottom: 0.3rem;">Brandon Yee</h1>
 							<a href="mailto:hello@brandonyee.io">hello@brandonyee.io</a>
 							<p class="spacer"></p>
-							<span style="font-size: 2.5rem; color: #22278c;">
-								<a href="https://www.linkedin.com/in/brandon-y/" target="_blank"><i class="fab fa-linkedin"></i></a>
-								&nbsp;&nbsp;&nbsp;
-								<a href="https://github.com/Firebird1029" target="_blank"><i class="fab fa-github"></i></a>
-								&nbsp;&nbsp;&nbsp;
-								<a href="https://www.instagram.com/brandon.y/" target="_blank"><i class="fab fa-instagram"></i></a>
-							</span>
+							<div id="contactSocial" style="width: 100%">
+								<span style="font-size: 2.5rem; color: #22278c;">
+									<a href="https://www.linkedin.com/in/brandon-y/" target="_blank"><i class="fab fa-linkedin"></i></a>
+									&nbsp;&nbsp;&nbsp;
+									<a href="https://github.com/Firebird1029" target="_blank"><i class="fab fa-github"></i></a>
+									&nbsp;&nbsp;&nbsp;
+									<a href="https://www.instagram.com/brandon.y/" target="_blank"><i class="fab fa-instagram"></i></a>
+								</span>
+							</div>
 
 						</div>
 
 					</div>
 				</section>
 			</div>
-			
+
 			<div style="width: 100%; text-align: center;">
 				<p class="unselectable">Thanks for visiting!</p>
 			</div>
@@ -114,29 +175,43 @@
 			<div class="turtle-parallax" ></div>
 			<!-- <div style="height: 5rem;"></div> -->
 		</article>
-		<article class="project-panel" id="punschedule-description">
-			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="arrow-left"></i>&nbsp;Back</button>
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus distinctio facilis cupiditate, quibusdam quia voluptate temporibus, ea minus quidem adipisci voluptatibus officia omnis provident. Illum reprehenderit, praesentium eos omnis.</div>
-			<div>Repudiandae hic maiores nostrum quae quisquam autem aliquid quidem magni, rerum, necessitatibus quod eveniet est animi id incidunt possimus tenetur sit culpa laudantium dignissimos libero. Quaerat nihil, tenetur recusandae repellendus.</div>
-			<div>Cumque, error inventore tenetur alias, debitis accusantium asperiores nam officia id ab minima explicabo, aperiam ipsum voluptates ducimus dicta eaque doloremque, maiores. Rerum placeat nesciunt totam, illum, quo sapiente autem.</div>
-			<div>Esse sit omnis quibusdam voluptas sunt reprehenderit, repellendus tempora suscipit alias dolorem id ab recusandae sed unde aperiam, doloribus porro fugiat doloremque. Earum atque quos, facere minus, cum nemo? Officia.</div>
-			<div>Ad quo nisi, suscipit eveniet quas magnam sint itaque odit, culpa, eaque cupiditate consequatur ab esse consectetur sed dolor quos nihil maiores vero obcaecati rem! Ab necessitatibus eveniet, facilis autem.</div>
-			<div>Atque iste omnis qui obcaecati accusamus, perspiciatis dolorum ex commodi adipisci ratione quam suscipit quas fugiat excepturi fuga sapiente, modi recusandae dolorem repudiandae. Odio quae pariatur, amet, debitis distinctio illum?</div>
-			<div>Perferendis illo itaque recusandae ratione repellendus autem quasi commodi dolor optio deserunt, cupiditate accusantium, consectetur quam modi magnam! Cumque est sit aspernatur provident dolore rerum, beatae ab excepturi eum! Alias?</div>
-			<div>Nam blanditiis ea consequuntur ratione earum asperiores ipsam libero reiciendis corporis consectetur dolore, obcaecati laborum numquam iste eligendi accusamus omnis mollitia excepturi laudantium nemo, illo, voluptatem tenetur dolor in. Numquam.</div>
-			<div>Dolor necessitatibus accusantium autem maxime deleniti, nam, cupiditate quos aspernatur officia nisi accusamus voluptatem molestias repellat eum praesentium. Veritatis nostrum dolor culpa neque reprehenderit a excepturi, enim rerum inventore aspernatur.</div>
-			<div>Dolor maxime fugiat, accusamus quae molestias, repellendus, inventore dolore assumenda sed laborum blanditiis consectetur reprehenderit incidunt deleniti eveniet excepturi numquam ducimus deserunt itaque modi quisquam eligendi. Sint cum esse impedit?</div>
-			<div>Cupiditate eum recusandae, ex autem iure adipisci quaerat inventore. Rem, blanditiis eaque incidunt id ab necessitatibus amet sit cum exercitationem cumque sunt eligendi esse corporis perspiciatis quos voluptatem similique ipsam.</div>
-			<div>Animi harum sint, ut. Voluptatum rerum iste blanditiis omnis dicta assumenda ab sunt nemo, hic qui suscipit maiores dolor, exercitationem sint animi quia facilis consequatur sapiente, debitis, dignissimos illo laudantium?</div>
-			<div>Quia inventore, consequuntur harum asperiores, aliquam distinctio perspiciatis cupiditate atque tempore laudantium tempora obcaecati in consequatur! Et eligendi cumque animi dolor pariatur, maiores, facilis placeat quibusdam aspernatur officiis nihil. Quidem!</div>
-			<div>Neque beatae quis dolore aliquid, ipsum at rem totam omnis, ipsa laborum ut fugiat voluptate delectus, necessitatibus! Deleniti rerum, quaerat tempore cupiditate esse? Reprehenderit officia, corporis suscipit quam voluptas minima.</div>
-			<div>Repudiandae tempore numquam quia doloremque eveniet eius quis vitae accusantium, aliquid dolorem ratione dolore consequatur assumenda eos quidem, aut et dolorum facilis non! Impedit, facilis maxime maiores dolorem velit ipsa.</div>
-			<div>Deserunt omnis libero illo in qui aliquam accusantium reprehenderit modi? Possimus quod sit culpa rerum aspernatur doloribus ipsum aliquid modi assumenda, eos mollitia minus eius nihil deserunt pariatur qui tenetur?</div>
-			<div>Eos adipisci sed iusto mollitia dolore repellendus doloremque ipsa eveniet minus assumenda, minima beatae at aliquid asperiores commodi, sequi, neque! Unde aperiam odit repellat accusamus expedita officiis alias nam tenetur?</div>
-			<div>Non molestiae voluptates, illo accusamus, voluptas maxime recusandae assumenda exercitationem. Ut sapiente omnis aut unde maxime recusandae ab, repellendus molestiae? Quos optio incidunt id a ipsum inventore, repudiandae neque libero?</div>
-			<div>Deserunt tempore maxime veritatis. Vel dolorum repudiandae dolor ad culpa consectetur, eum repellat iure. Assumenda, quam. Quo, reprehenderit asperiores sapiente quidem quia tempore, repellendus enim alias recusandae quis explicabo mollitia!</div>
-			<div>Molestiae iste, recusandae, nostrum ullam voluptas tenetur iure animi fugiat similique accusantium, veritatis, adipisci quaerat exercitationem! Quasi ratione at distinctio, cum possimus iste labore inventore molestiae incidunt consequuntur, sunt modi.</div>
+		<!-- article.project-panel#FOO-description>button.closeProjectDescriptionButton[onclick="closeProjectDescription()"]>i.fas.fa-arrow-left+{&nbsp;&nbsp;Back}^p.spacer+p{description} -->
+		<article class="project-panel" id="distancethermo-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<p></p>
 		</article>
+
+		<article class="project-panel" id="converge-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<p></p>
+		</article>
+
+		<article class="project-panel" id="punschedule-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<div>
+				<img id="image" src="/assets/img/punschedule/sched.png" alt="" width="100%">
+			</div>
+			<p>After Punahou School switched to remote education and an entirely new schedule system midway throughout the 2020 spring semester, Punschedule was an easy way for students to generate their new distance learning schedule digitally. Students could either allow Punschedule to automatically pull and process their schedule based on myBackpack or manually enter in their courses and pre-remote course times. After generating their schedule, students could modify and customize their new schedule, view office hours and subject due dates, as well as download their schedule into a PDF. Punschedule was used by roughly 90% of the high school student body.</p>
+			<img src="/assets/img/punschedule/create.png" alt="" width="100%">
+			<img src="/assets/img/punschedule/casper-loading.png" alt="" width="100%">
+			<img src="/assets/img/punschedule/sched3.png" alt="" width="100%">
+		</article>
+
+		<article class="project-panel" id="mahalograms-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<p></p>
+		</article>
+
+		<article class="project-panel" id="facemasks-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<p></p>
+		</article>
+
 		<footer>
 			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 			<script src="/utils.js"></script>
