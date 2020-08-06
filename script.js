@@ -39,3 +39,9 @@ function closeProjectDescription() {
 		}
 	});
 }
+
+// Scrolling
+function scrollToID(id) {
+	const contact = document.getElementById(id);
+	contact.scrollIntoView({ behavior: "smooth" });
+}

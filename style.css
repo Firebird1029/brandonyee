@@ -81,6 +81,15 @@ p.spacer {
 	margin-bottom: 3rem;
 }
 
+p.unselectable {
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 /* Page Layout */
 .row {
 	display: flex;
@@ -101,23 +110,35 @@ p.spacer {
 }
 
 .right {
-	padding: 1rem;
-
-	min-height: 200vh; /* Remove later */
+	padding: 2rem 1rem;
+	/*padding: 50vh 1rem 0;*/
+	/*min-height: 200vh;*/
 }
 
 .sticky-wrapper {
 	position: sticky;
 	height: auto;
 	top: 0px;
+
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+}
+
+.sticky-wrapper.sticky-blue {
+	box-shadow: 0.5rem 0 0px 0px #22278c inset;
+}
+
+.sticky-wrapper.sticky-green {
+	box-shadow: 0.5rem 0 0px 0px #076b03 inset;
 }
 
 .sticky-content {
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
-
-	padding-left: 5rem;
+	
+	padding-left: 3rem;
+	
 }
 
 /* Nav */
@@ -131,20 +152,41 @@ nav {
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Header */
+/* Intro Header */
 .full-height {
 	min-height: 100vh;
 }
 
-header {
+.full-height header {
 	text-align: center;
 }
 
-header h1 {
+.full-height header h1 {
 	margin: 1rem;
 
 	font-weight: 900;
 	font-size: 2.5rem;
+}
+
+.full-height section {
+	padding: 10% 15%;
+	text-align: center;
+}
+
+.full-height section p.title {
+	font-size: 1.5rem;
+}
+
+.full-height section p.subtitle {
+	font-size: 1.1rem;
+	color: #777;
+}
+
+.full-height footer {
+	position: absolute;
+	width: 100%;
+	bottom: 4rem;
+	text-align: center;
 }
 
 /* Left Side Styling */
@@ -200,4 +242,16 @@ button.closeProjectDescriptionButton:hover {
 .animate__animated.animate__slideInLeft,
 .animate__animated.animate__slideOutLeft {
 	--animate-duration: 800ms;
+}
+
+/* Footer */
+.turtle-parallax {
+	background-image: url("assets/img/site/turtle.png");
+	min-height: 5rem;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: 50% 98%;
+	background-repeat: no-repeat;
+	background-size: 3rem auto;
 }
