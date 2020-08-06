@@ -16,6 +16,9 @@
 		<link rel="stylesheet" href="/style.css">
 	</head>
 	<body>
+		<!-- <nav>
+			<a href="#projects">Projects</a>
+		</nav> -->
 		<article>
 			<div class="full-height" style="position: relative;">
 				<header>
@@ -42,6 +45,114 @@
 					<div class="column left">
 							<div class="sticky-wrapper sticky-blue">
 								<div class="sticky-content" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-once="true">
+									<h1>PROJECTS</h1>
+								</div>
+							</div>
+					</div>
+					<div class="column right" id="projects">
+						<!-- div.project-preview[text-align: center;"]>p.subtitle{n / n}+p.spacer+p>img[src="assets/img/" width="50%"]^p>h1{title}+a[href="#" target="_blank"]{}^p{description}+p.spacer+p>button[onclick="openProjectDescription('')"]{Learn More} -->
+
+						<!-- Distance Thermometer -->
+						<div class="project-preview">
+							<p class="subtitle">1 / 5</p>
+							<p class="spacer"></p>
+							<p>
+								<!-- <img src="assets/img/" alt="" width="50%"> -->
+								<i class="fas fa-thermometer-half fa-5x" style="color: #444;"></i>
+								<p class="spacer"></p>
+							</p>
+							<p>
+								<h1>Distance Thermometer</h1>
+								<a href="https://distancethermo.com/" target="_blank">distancethermo.com</a>
+							</p>
+							<p>Detect and monitor employee temperatures.</p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('distancethermo')">Learn More</button></p>
+						</div>
+
+						<!-- Converge -->
+						<div class="project-preview">
+							<p class="subtitle">2 / 5</p>
+							<p class="spacer"></p>
+							<p>
+								<img src="assets/img/converge.png" alt="" width="50%">
+							</p>
+							<p>
+								<h1>Converge Church</h1>
+								<a href="https://convergehawaii.org/" target="_blank">convergehawaii.org</a>
+							</p>
+							<p><span>A church website with live streaming, realtime video conferencing, dynamic rendering via Pug.js, interactive calendar, user-friendly spreadsheet-database system via Airtable, photo gallery, web form validation + sanitization, and responsive design.</span></p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('converge')">Learn More</button></p>
+						</div>
+
+						<!-- Punschedule -->
+						<div class="project-preview">
+							<p class="subtitle">3 / 5</p>
+							<p class="spacer"></p>
+							<p><img src="assets/img/punschedule/sched.png" alt="" width="50%"></p>
+							<p>
+								<h1>Punschedule</h1>
+								<!-- <a href="https://punschedule.com/" target="_blank">punschedule.com</a> -->
+							</p>
+							<p>Punschedule is an easy way for Punahou students to automatically generate, customize, and download their Punahou School distance learning schedules.</p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('punschedule')">Learn More</button></p>
+						</div>
+
+						<!-- Mahalograms -->
+						<div class="project-preview">
+							<p class="subtitle">4 / 5</p>
+							<p class="spacer"></p>
+							<p><img src="assets/img/mahalograms.jpg" alt="" width="50%"></p>
+							<p>
+								<h1>Mahalograms</h1>
+								<!-- <a href="https://mahalograms.punschedule.com/" target="_blank">mahalograms.punschedule.com</a> -->
+							</p>
+							<p>Mahalograms allows students to send virtual thank you cards at the end of the school year to fellow students and teachers.</p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('mahalograms')">Learn More</button></p>
+						</div>
+
+						<!-- Face Masks -->
+						<div class="project-preview">
+							<p class="subtitle">5 / 5</p>
+							<p class="spacer"></p>
+							<p>
+								<!-- <img src="assets/img/" alt="" width="50%"> -->
+								<i class="fas fa-head-side-mask fa-5x" style="color: #444;"></i>
+								<p class="spacer"></p>
+							</p>
+							<p>
+								<h1>Face Masks for Hawaii</h1>
+								<!-- <a href="#" target="_blank"></a> -->
+							</p>
+							<p>Give, receive, and exchange face masks with nearby community members.</p>
+							<p class="spacer"></p>
+							<p><button onclick="openProjectDescription('facemasks')">Learn More</button></p>
+						</div>
+					</div>
+				</section>
+
+				<section class="row">
+					<div class="column left">
+							<div class="sticky-wrapper sticky-green">
+								<div class="sticky-content" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-once="true">
+									<h1 style="color: #076b03;">CERTIFICATES</h1>
+								</div>
+							</div>
+					</div>
+					<div class="column right" id="certificates" style="min-height: 100vh;">
+						<div>
+							<p>Coming soon!</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="row">
+					<div class="column left">
+							<div class="sticky-wrapper sticky-blue">
+								<div class="sticky-content" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-once="true">
 									<h1>CONTACT</h1>
 								</div>
 							</div>
@@ -49,6 +160,7 @@
 					<div class="column right" id="contact" style="min-height: 150vh;">
 						<div class="hidden-touch" style="height: 30vh;"></div>
 						<div>
+							<!-- Please reach out to me for a resume or if you have any inquiries. I am always stoked to meet new people and build impactful, cool projects. -->
 							<p>Please reach out to me for a resume. I am always stoked to build impactful, cool projects.</p>
 							<p class="spacer"></p>
 							<h1 style="margin-bottom: 0.3rem;">Brandon Yee</h1>
@@ -69,7 +181,51 @@
 					</div>
 				</section>
 			</div>
+
+			<div style="width: 100%; text-align: center;">
+				<p class="unselectable">Thanks for visiting!</p>
+			</div>
+			<!-- <div style="height: 0.5rem; background: #076b03; opacity: 0.9; margin-left: 5%; width: 90%;"></div> -->
+			<div class="turtle-parallax" ></div>
+			<!-- <div style="height: 5rem;"></div> -->
 		</article>
+		<!-- article.project-panel#FOO-description>button.closeProjectDescriptionButton[onclick="closeProjectDescription()"]>i.fas.fa-arrow-left+{&nbsp;&nbsp;Back}^p.spacer+p{description} -->
+		<article class="project-panel" id="distancethermo-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<p></p>
+		</article>
+
+		<article class="project-panel" id="converge-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<p></p>
+		</article>
+
+		<article class="project-panel" id="punschedule-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<div>
+				<img id="image" src="/assets/img/punschedule/sched.png" alt="" width="100%">
+			</div>
+			<p>After Punahou School switched to remote education and an entirely new schedule system midway throughout the 2020 spring semester, Punschedule was an easy way for students to generate their new distance learning schedule digitally. Students could either allow Punschedule to automatically pull and process their schedule based on myBackpack or manually enter in their courses and pre-remote course times. After generating their schedule, students could modify and customize their new schedule, view office hours and subject due dates, as well as download their schedule into a PDF. Punschedule was used by roughly 90% of the high school student body.</p>
+			<img src="/assets/img/punschedule/create.png" alt="" width="100%">
+			<img src="/assets/img/punschedule/casper-loading.png" alt="" width="100%">
+			<img src="/assets/img/punschedule/sched3.png" alt="" width="100%">
+		</article>
+
+		<article class="project-panel" id="mahalograms-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<p></p>
+		</article>
+
+		<article class="project-panel" id="facemasks-description">
+			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<p class="spacer"></p>
+			<p></p>
+		</article>
+
 		<footer>
 			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 			<script src="/utils.js"></script>
