@@ -9,39 +9,22 @@ body {
 	font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 
-/* Elements */
-i[class^="arrow-"] {
-  border: solid #22278c;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-bottom: 1px;
-}
-
-i.arrow-right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-i.arrow-left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-i.arrow-up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-i.arrow-down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
 /* General Style */
 p,
 button {
 	font-family: "Source Sans Pro", "Arial", sans-serif;
+}
+
+a {
+	color: #22278c;
+	text-decoration: none;
+}
+a:visited {
+	color: #22278c;
+}
+a:hover {
+	color: hsl(237, 76%, 25%);
+	border-bottom: 1px solid #22278c;
 }
 
 h1,
@@ -51,12 +34,19 @@ h4,
 h5,
 h6 {
 	font-family: "Playfair Display", "Times New Roman", serif;
+
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 button {
 	display: inline-block;
 	border: 2px solid #22278c;
-	border-radius: 2px;
+	border-radius: 5px;
 	padding: 0.7rem 1.7rem;
 	margin: 0;
 	background-color: white;
@@ -69,22 +59,26 @@ button {
 	text-transform: uppercase;
 
 	cursor: pointer;
+	outline: none;
 	transition: background 250ms ease-in-out, transform 150ms ease;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
 
-button:hover,
-button:focus {
+button:hover {
 	background: #22278c;
 	color: white;
 
-	outline: 1px solid #fff;
-	outline-offset: -5px;
+	/*outline: 1px solid #fff;
+	outline-offset: -5px;*/
 }
 
 button:active {
 	transform: scale(0.99);
+}
+
+p.spacer {
+	margin-bottom: 3rem;
 }
 
 /* Page Layout */
@@ -195,9 +189,9 @@ button.closeProjectDescriptionButton {
 	background-color: inherit;
 	padding: 0.7rem 0.5rem;
 	font-size: 1rem;
+	font-weight: 600;
 }
-button.closeProjectDescriptionButton:hover,
-button.closeProjectDescriptionButton:focus {
+button.closeProjectDescriptionButton:hover {
 	background: #ddd;
 	color: #22278c;
 	outline: none;
