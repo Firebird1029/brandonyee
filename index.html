@@ -27,7 +27,7 @@
 				<section>
 					<p class="title unselectable animate__animated animate__fadeIn"><span style="vertical-align: middle;">&#128075;</span> &nbsp; Hey, I'm Brandon, a student at Yale University studying computer science. I enjoy experimenting with automation, IoT, and different ways technology can uplift others.</p>
 					<p class="spacer"></p>
-					<p class="subtitle animate__animated animate__fadeIn animate__delay-1s">*I am actively seeking internship or employment opportunities for Fall 2020/Spring 2021. Please contact me <a style="opacity: 0.9; cursor: pointer;" onclick="scrollToID('contact')">here.</a></p>
+					<p class="subtitle animate__animated animate__fadeIn animate__delay-1s">*I am actively seeking internship or employment opportunities for Fall 2020/Spring 2021. Please contact me <a style="opacity: 0.9; cursor: pointer;" onclick="scrollToID('contact')">here</a>.</p>
 				</section>
 				<footer>
 					<span style="font-size: 2.5rem; color: #22278c;">
@@ -50,20 +50,21 @@
 							</div>
 					</div>
 					<div class="column right" id="projects">
-						<!-- div.project-preview[text-align: center;"]>p.subtitle{n / n}+p.spacer+p>img[src="assets/img/" width="50%"]^p>h1{title}+a[href="#" target="_blank"]{}^p{description}+p.spacer+p>button[onclick="openProjectDescription('')"]{Learn More} -->
+						<!-- div.project-preview>p.subtitle+p>h1{title}+a[href="#" target="_blank"]{FOO}^p.cover-image>img[src="assets/img/" width="50%"]^p{description}+p.spacer+p>button[onclick="openProjectDescription('')"]{Learn More} -->
+
+						<!-- Change var --project-preview-total in the CSS to change the counter. -->
 
 						<!-- Distance Thermometer -->
 						<div class="project-preview">
-							<p class="subtitle">1 / 5</p>
-							<p class="spacer"></p>
-							<p>
-								<!-- <img src="assets/img/" alt="" width="50%"> -->
-								<i class="fas fa-thermometer-half fa-5x" style="color: #444;"></i>
-								<p class="spacer"></p>
-							</p>
+							<p class="subtitle"></p>
 							<p>
 								<h1>Distance Thermometer</h1>
 								<a href="https://distancethermo.com/" target="_blank">distancethermo.com</a>
+							</p>
+							<p class="cover-image">
+								<!-- <img src="assets/img/" alt="" width="50%"> -->
+								<i class="fas fa-thermometer-half fa-5x" style="color: #444;"></i>
+								<p class="spacer"></p>
 							</p>
 							<p>Detect and monitor employee temperatures.</p>
 							<p class="spacer"></p>
@@ -72,14 +73,13 @@
 
 						<!-- Converge -->
 						<div class="project-preview">
-							<p class="subtitle">2 / 5</p>
-							<p class="spacer"></p>
-							<p>
-								<img src="assets/img/converge.png" alt="" width="50%">
-							</p>
+							<p class="subtitle"></p>
 							<p>
 								<h1>Converge Church</h1>
 								<a href="https://convergehawaii.org/" target="_blank">convergehawaii.org</a>
+							</p>
+							<p class="cover-image">
+								<img src="assets/img/converge.png" alt="" width="50%">
 							</p>
 							<p><span>A church website with live streaming, realtime video conferencing, dynamic rendering via Pug.js, interactive calendar, user-friendly spreadsheet-database system via Airtable, photo gallery, web form validation + sanitization, and responsive design.</span></p>
 							<p class="spacer"></p>
@@ -88,13 +88,12 @@
 
 						<!-- Punschedule -->
 						<div class="project-preview">
-							<p class="subtitle">3 / 5</p>
-							<p class="spacer"></p>
-							<p><img src="assets/img/punschedule/sched.png" alt="" width="50%"></p>
+							<p class="subtitle"></p>
 							<p>
 								<h1>Punschedule</h1>
 								<!-- <a href="https://punschedule.com/" target="_blank">punschedule.com</a> -->
 							</p>
+							<p class="cover-image"><img src="assets/img/punschedule.png" alt="" width="50%"></p>
 							<p>Punschedule is an easy way for Punahou students to automatically generate, customize, and download their Punahou School distance learning schedules.</p>
 							<p class="spacer"></p>
 							<p><button onclick="openProjectDescription('punschedule')">Learn More</button></p>
@@ -102,13 +101,12 @@
 
 						<!-- Mahalograms -->
 						<div class="project-preview">
-							<p class="subtitle">4 / 5</p>
-							<p class="spacer"></p>
-							<p><img src="assets/img/mahalograms.jpg" alt="" width="50%"></p>
+							<p class="subtitle"></p>
 							<p>
 								<h1>Mahalograms</h1>
 								<!-- <a href="https://mahalograms.punschedule.com/" target="_blank">mahalograms.punschedule.com</a> -->
 							</p>
+							<p class="cover-image"><img src="assets/img/mahalograms.jpg" alt="" width="50%"></p>
 							<p>Mahalograms allows students to send virtual thank you cards at the end of the school year to fellow students and teachers.</p>
 							<p class="spacer"></p>
 							<p><button onclick="openProjectDescription('mahalograms')">Learn More</button></p>
@@ -116,16 +114,15 @@
 
 						<!-- Face Masks -->
 						<div class="project-preview">
-							<p class="subtitle">5 / 5</p>
-							<p class="spacer"></p>
-							<p>
-								<!-- <img src="assets/img/" alt="" width="50%"> -->
-								<i class="fas fa-head-side-mask fa-5x" style="color: #444;"></i>
-								<p class="spacer"></p>
-							</p>
+							<p class="subtitle"></p>
 							<p>
 								<h1>Face Masks for Hawaii</h1>
 								<!-- <a href="#" target="_blank"></a> -->
+							</p>
+							<p class="cover-image">
+								<!-- <img src="assets/img/" alt="" width="50%"> -->
+								<i class="fas fa-head-side-mask fa-5x" style="color: #444;"></i>
+								<p class="spacer"></p>
 							</p>
 							<p>Give, receive, and exchange face masks with nearby community members.</p>
 							<p class="spacer"></p>
@@ -185,45 +182,56 @@
 			<div style="width: 100%; text-align: center;">
 				<p class="unselectable">Thanks for visiting!</p>
 			</div>
-			<!-- <div style="height: 0.5rem; background: #076b03; opacity: 0.9; margin-left: 5%; width: 90%;"></div> -->
 			<div class="turtle-parallax" ></div>
-			<!-- <div style="height: 5rem;"></div> -->
-		</article>
-		<!-- article.project-panel#FOO-description>button.closeProjectDescriptionButton[onclick="closeProjectDescription()"]>i.fas.fa-arrow-left+{&nbsp;&nbsp;Back}^p.spacer+p{description} -->
-		<article class="project-panel" id="distancethermo-description">
-			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
-			<p class="spacer"></p>
-			<p></p>
 		</article>
 
-		<article class="project-panel" id="converge-description">
-			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
-			<p class="spacer"></p>
-			<p></p>
+		<!-- article.project-panel#FOO-description[data-google=""]>button.closeProjectDescriptionButton>i.fas.fa-arrow-left+{&nbsp;&nbsp;Back}^div.iframe-outer-container>div.iframe-inner-container>iframe.project-content[frameborder="0" srcdoc="Loading..."]{Darn it, this website is not compatible with your browser yet.} -->
+		<article class="project-panel" id="distancethermo-description" data-google="">
+			<button class="closeProjectDescriptionButton"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<div class="iframe-outer-container">
+				<div class="iframe-inner-container">
+					<iframe class="project-content" frameborder="0" srcdoc="Loading...">Darn it, this website is not compatible with your browser yet.</iframe>
+				</div>
+			</div>
 		</article>
 
-		<article class="project-panel" id="punschedule-description">
-			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+		<article class="project-panel" id="converge-description" data-google="">
+			<button class="closeProjectDescriptionButton"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<div class="iframe-outer-container">
+				<div class="iframe-inner-container">
+					<iframe class="project-content" frameborder="0" srcdoc="Loading...">Darn it, this website is not compatible with your browser yet.</iframe>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-panel" id="punschedule-description" data-google="">
+			<button class="closeProjectDescriptionButton"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
 			<p class="spacer"></p>
 			<div>
 				<img id="image" src="/assets/img/punschedule/sched.png" alt="" width="100%">
 			</div>
-			<p>After Punahou School switched to remote education and an entirely new schedule system midway throughout the 2020 spring semester, Punschedule was an easy way for students to generate their new distance learning schedule digitally. Students could either allow Punschedule to automatically pull and process their schedule based on myBackpack or manually enter in their courses and pre-remote course times. After generating their schedule, students could modify and customize their new schedule, view office hours and subject due dates, as well as download their schedule into a PDF. Punschedule was used by roughly 90% of the high school student body.</p>
-			<img src="/assets/img/punschedule/create.png" alt="" width="100%">
-			<img src="/assets/img/punschedule/casper-loading.png" alt="" width="100%">
-			<img src="/assets/img/punschedule/sched3.png" alt="" width="100%">
+
+			<div class="iframe-outer-container">
+				<div class="iframe-inner-container">
+					<iframe class="project-content" frameborder="0" srcdoc="Loading...">Darn it, this website is not compatible with your browser yet.</iframe>
+				</div>
+			</div>
 		</article>
 
-		<article class="project-panel" id="mahalograms-description">
-			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
-			<p class="spacer"></p>
-			<p></p>
+		<article class="project-panel" id="mahalograms-description" data-google="">
+			<button class="closeProjectDescriptionButton"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<div class="iframe-outer-container">
+				<div class="iframe-inner-container">
+					<iframe class="project-content" frameborder="0" srcdoc="Loading...">Darn it, this website is not compatible with your browser yet.</iframe>
+				</div>
+			</div>
 		</article>
 
-		<article class="project-panel" id="facemasks-description">
-			<button class="closeProjectDescriptionButton" onclick="closeProjectDescription()"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
-			<p class="spacer"></p>
-			<p></p>
+		<article class="project-panel" id="facemasks-description" data-google="">
+			<button class="closeProjectDescriptionButton"><i class="fas fa-arrow-left"></i>&nbsp;&nbsp;Back</button>
+			<div class="iframe-outer-container">
+				<div class="iframe-inner-container"><iframe src="" frameborder="0" class="project-content" srcdoc="Loading...">Darn it, this website is not compatible with your browser yet.</iframe></div>
+			</div>
 		</article>
 
 		<footer>
