@@ -1,0 +1,208 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Brandon Yee
+		meta(name="description" content="")
+		meta(name="author" content="Brandon Yee")
+		meta(name="robots" content="noarchive")
+		script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-162004547-6")
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+			dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-162004547-6");
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css")
+		link(rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css")
+		link(rel="stylesheet" href="/style.css")
+	body
+		//-
+			<nav>
+			<a href="#projects">Projects</a>
+			</nav>
+		article
+			.full-height(style="position: relative;")
+				header
+					h1 Brandon Yee
+				section
+					p.title.unselectable.animate__animated.animate__fadeIn
+						span(style="vertical-align: middle;") 👋 Hey, I"m Brandon, a student at Yale University studying computer science. I enjoy experimenting with automation, IoT, and different ways technology can uplift others.
+					p.spacer
+					p.subtitle.animate__animated.animate__fadeIn.animate__delay-1s
+						span *I am actively seeking internship or employment opportunities for Summer 2021. Please contact me 
+						a(style="opacity: 0.9; cursor: pointer;" onclick="scrollToID('contact')") here.
+				footer
+					span(style="font-size: 2.5rem; color: #22278c;")
+						a(href="https://www.linkedin.com/in/brandon-y/" target="_blank"): i.fab.fa-linkedin
+						span &nbsp;&nbsp;&nbsp;
+						a(href="https://github.com/Firebird1029" target="_blank"): i.fab.fa-github
+						span &nbsp;&nbsp;&nbsp;
+						a(href="https://www.instagram.com/brandon.y/" target="_blank"): i.fab.fa-instagram
+						span &nbsp;&nbsp;&nbsp;
+			div
+				section.row
+					.column.left
+						.sticky-wrapper.sticky-blue
+							.sticky-content(data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-once="true")
+								h1 PROJECTS
+					#projects.column.right
+						//- div.project-preview>p.subtitle+p>h1{title}+a[href="#" target="_blank"]{FOO}^p.cover-image>img[src="assets/img/" width="50%"]^p{description}+p.spacer+p>button[onclick="openProjectDescription("")"]{Learn More}
+						//- Change var --project-preview-total in the CSS to change the counter.
+						//- Distance Thermometer
+						.project-preview
+							p.subtitle
+							p
+							h1 Distance Thermometer
+							a(href="https://distancethermo.com/" target="_blank") distancethermo.com
+							p
+							p.cover-image
+								//- <img src="assets/img/" alt="" width="50%">
+								i.fas.fa-thermometer-half.fa-5x(style="color: #444;")
+							p.spacer
+							p
+							p Detect and monitor employee temperatures.
+							p.spacer
+							p
+								button(onclick="openProjectDescription('distancethermo')") Learn More
+						//- Converge
+						.project-preview
+							p.subtitle
+							p
+							h1 Converge Church
+							a(href="https://convergehawaii.org/" target="_blank") convergehawaii.org
+							p
+							p.cover-image
+								img(src="assets/img/converge.png" alt="" width="50%")
+							p A church website with live streaming, realtime video conferencing, dynamic rendering via Pug.js, interactive calendar, user-friendly spreadsheet-database system via Airtable, photo gallery, web form validation + sanitization, and responsive design.
+							p.spacer
+							p
+								button(onclick="openProjectDescription('converge')") Learn More
+						//- Punschedule
+						.project-preview
+							p.subtitle
+							p
+							h1 Punschedule
+							//- <a href="https://punschedule.com/" target="_blank">punschedule.com</a>
+							p
+							p.cover-image
+								img(src="assets/img/punschedule.png" alt="" width="50%")
+							p Punschedule is an easy way for Punahou students to automatically generate, customize, and download their Punahou School distance learning schedules.
+							p.spacer
+							p
+								button(onclick="openProjectDescription('punschedule')") Learn More
+						//- Mahalograms
+						.project-preview
+							p.subtitle
+							p
+							h1 Mahalograms
+							//- <a href="https://mahalograms.punschedule.com/" target="_blank">mahalograms.punschedule.com</a>
+							p
+							p.cover-image
+								img(src="assets/img/mahalograms.jpg" alt="" width="50%")
+							p Mahalograms allows students to send virtual thank you cards at the end of the school year to fellow students and teachers.
+							p.spacer
+							p
+								button(onclick="openProjectDescription('mahalograms')") Learn More
+						//- Face Masks
+						.project-preview
+							p.subtitle
+							p
+							h1 Face Masks for Hawaii
+							//- <a href="#" target="_blank"></a>
+							p
+							p.cover-image
+								//- <img src="assets/img/" alt="" width="50%">
+								i.fas.fa-head-side-mask.fa-5x(style="color: #444;")
+							p.spacer
+							p
+							p Give, receive, and exchange face masks with nearby community members.
+							p.spacer
+							p
+								button(onclick="openProjectDescription('facemasks')") Learn More
+				//--
+					<section class="row">
+					<div class="column left">
+					<div class="sticky-wrapper sticky-green">
+					<div class="sticky-content" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-once="true">
+					<h1 style="color: #076b03;">CERTIFICATES</h1>
+					</div>
+					</div>
+					</div>
+					<div class="column right" id="certificates" style="min-height: 100vh;">
+					<div>
+					<p>Coming soon!</p>
+					</div>
+					</div>
+					</section>
+				section.row
+					.column.left
+						.sticky-wrapper.sticky-blue
+							.sticky-content(data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-once="true")
+								h1 CONTACT
+					#contact.column.right(style="min-height: 150vh;")
+						.hidden-touch(style="height: 30vh;")
+						div
+							//- Please reach out to me for a resume or if you have any inquiries. I am always stoked to meet new people and build impactful, cool projects.
+							p Please reach out to me for a resume. I am always stoked to build impactful, cool projects.
+							p.spacer
+							h1(style="margin-bottom: 0.3rem;") Brandon Yee
+							a(href="mailto:hello@brandonyee.io") hello@brandonyee.io
+							p.spacer
+							#contactSocial(style="width: 100%")
+								span(style="font-size: 2.5rem; color: #22278c;")
+									a(href="https://www.linkedin.com/in/brandon-y/" target="_blank"): i.fab.fa-linkedin
+									span &nbsp;&nbsp;&nbsp;
+									a(href="https://github.com/Firebird1029" target="_blank"): i.fab.fa-github
+									span &nbsp;&nbsp;&nbsp;
+									a(href="https://www.instagram.com/brandon.y/" target="_blank"): i.fab.fa-instagram
+									span &nbsp;&nbsp;&nbsp;
+			div(style="width: 100%; text-align: center;")
+				h3.unselectable Brandon Yee
+			.turtle-parallax
+		//- article.project-panel#FOO-description[data-google=""]>button.closeProjectDescriptionButton>i.fas.fa-arrow-left+{&nbsp;&nbsp;Back}^div.iframe-outer-container>div.iframe-inner-container>iframe.project-content[frameborder="0" srcdoc="Loading..."]{Darn it, this website is not compatible with your browser yet.}
+		article#distancethermo-description.project-panel(data-google="")
+			button.closeProjectDescriptionButton
+				i.fas.fa-arrow-left
+				span   Back
+			.iframe-outer-container
+				.iframe-inner-container
+					iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
+		article#converge-description.project-panel(data-google="")
+			button.closeProjectDescriptionButton
+				i.fas.fa-arrow-left
+				span   Back
+			.iframe-outer-container
+				.iframe-inner-container
+					iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
+		article#punschedule-description.project-panel(data-google="")
+			button.closeProjectDescriptionButton
+				i.fas.fa-arrow-left
+				span   Back
+			p.spacer
+			div
+				img#image(src="/assets/img/punschedule/sched.png" alt="" width="100%")
+			.iframe-outer-container
+				.iframe-inner-container
+					iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
+		article#mahalograms-description.project-panel(data-google="")
+			button.closeProjectDescriptionButton
+				i.fas.fa-arrow-left
+				span Back
+			.iframe-outer-container
+				.iframe-inner-container
+					iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
+		article#facemasks-description.project-panel(data-google="")
+			button.closeProjectDescriptionButton
+				i.fas.fa-arrow-left
+				span Back
+			.iframe-outer-container
+				.iframe-inner-container
+					iframe.project-content(src="" frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
+		footer
+			script(src="https://unpkg.com/aos@next/dist/aos.js")
+			script(src="/utils.js")
+			script(src="/script.js")
