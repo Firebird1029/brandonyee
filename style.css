@@ -27,6 +27,18 @@ a:hover {
 	border-bottom: 1px solid #22278c;
 }
 
+a.green-text {
+	color: #076b03;
+	text-decoration: none;
+}
+a.green-text:visited {
+	color: #076b03;
+}
+a.green-text:hover {
+	color: #066103;
+	border-bottom: 1px solid #066103;
+}
+
 h1,
 h2,
 h3,
@@ -131,6 +143,7 @@ button:active {
 
 .right {
 	padding: 5rem 1rem;
+	width: 100%;
 	/*padding: 50vh 1rem 0;*/
 	/*min-height: 200vh;*/
 }
@@ -454,9 +467,5 @@ iframe.project-content {
 
 	#contactSocial {
 		text-align: center;
-	}
-
-	.turtle-parallax {
-		background: none;
 	}
 }
