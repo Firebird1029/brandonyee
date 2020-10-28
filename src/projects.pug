@@ -1,0 +1,70 @@
+extends template/section-blue.pug
+
+mixin projectPreview({title, linkHref, linkText, imageSrc, description, alias})
+	.project-preview
+		.project-preview-box
+			p.subtitle
+			br
+			h1!= title
+			a(href=linkHref target="_blank")!= linkText
+			br
+			if imageSrc
+				p.cover-image
+					img(src=imageSrc alt="" width="50%")
+			p!= description
+			p.spacer
+			p(style="text-align: center;")
+				button(onclick="openProjectDescription('" + alias + "')") Learn More
+
+block sectionTitle
+	h1 &#x1F4A1; PROJECTS
+
+block sectionBody
+	#projects
+		//- Change var --project-preview-total in the CSS to change the counter.
+
+		//- Distance Thermometer
+		+projectPreview({
+			title: "&#x1F6E1; Distance Thermometer",
+			linkHref: "https://distancethermo.com/",
+			linkText: "distancethermo.com",
+			description: "Detect and monitor employee temperatures.",
+			alias: "distancethermo"
+		})
+
+		//- Converge
+		+projectPreview({
+			title: "&#x26EA; Converge Church",
+			linkHref: "https://convergehawaii.org/",
+			linkText: "convergehawaii.org",
+			imageSrc: "assets/img/converge.png",
+			description: "A church website with live streaming, realtime video conferencing, dynamic rendering via Pug.js, interactive calendar, user-friendly spreadsheet-database system via Airtable, photo gallery, web form validation + sanitization, and responsive design.",
+			alias: "converge"
+		})
+
+		//- Punschedule
+		+projectPreview({
+			title: "&#x1F4C5; Punschedule",
+			imageSrc: "assets/img/punschedule.png",
+			description: "Punschedule is an easy way for Punahou students to automatically generate, customize, and download their Punahou School distance learning schedules.",
+			alias: "punschedule"
+		})
+		//- linkHref: "https://punschedule.com/",
+		//- linkText: "punschedule.com",
+
+		//- Mahalograms
+		+projectPreview({
+			title: "&#x1F48C; Mahalograms",
+			imageSrc: "assets/img/mahalograms.jpg",
+			description: "Mahalograms allows students to send virtual thank you cards at the end of the school year to fellow students and teachers.",
+			alias: "mahalograms"
+		})
+		//- linkHref: "https://mahalograms.punschedule.com/",
+		//- linkText: "mahalograms.punschedule.com",
+
+		//- Face Masks
+		+projectPreview({
+			title: "&#x1F637; Face Masks for Hawaii",
+			description: "Give, receive, and exchange face masks with nearby community members.",
+			alias: "facemasks"
+		})
