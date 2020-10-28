@@ -79,17 +79,26 @@ button:active {
 	transform: scale(0.995);
 }
 
-p.spacer {
+.spacer {
 	margin-bottom: 3rem;
 }
 
-p.unselectable {
+.unselectable {
 	cursor: default;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+.selectable {
+	cursor: initial;
+	-webkit-touch-callout: initial !important;
+	-webkit-user-select: initial !important;
+	-moz-user-select: initial !important;
+	-ms-user-select: initial !important;
+	user-select: initial !important;
 }
 
 /* Color Helpers */
@@ -437,6 +446,10 @@ iframe.project-content {
 	/* Special for Mobile */
 	.hidden-touch {
 		display: none !important;
+	}
+
+	.centered-touch {
+		text-align: center !important;
 	}
 
 	#contactSocial {

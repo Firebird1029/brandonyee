@@ -6,15 +6,15 @@ mixin projectPreview(index, {title, linkHref, linkText, imageSrc, description, i
 			p.subtitle!= index+1 + "&nbsp; / &nbsp;" + PROJECTS.length
 			br
 			h1!= title
-			a(href=linkHref target="_blank")!= linkText
-			br
+			if linkHref && linkText
+				a(href=linkHref, target="_blank" style="margin-bottom: 1.5rem;")!= linkText
 			if imageSrc
 				p.cover-image
 					img(src=imageSrc alt="" width="50%")
 			p!= description
 			p.spacer
 			p(style="text-align: center;")
-				button(onclick="openProjectDescription('" + id + "')") Learn More
+				button(onclick="openProjectDescription('" + id + "')") - Learn More -
 
 block sectionTitle
 	h1 &#x1F4A1; PROJECTS
