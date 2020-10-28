@@ -1,6 +1,6 @@
 extends template/section-blue.pug
 
-mixin projectPreview({title, linkHref, linkText, imageSrc, description, alias})
+mixin projectPreview({title, linkHref, linkText, imageSrc, description, id})
 	.project-preview
 		.project-preview-box
 			p.subtitle
@@ -14,7 +14,7 @@ mixin projectPreview({title, linkHref, linkText, imageSrc, description, alias})
 			p!= description
 			p.spacer
 			p(style="text-align: center;")
-				button(onclick="openProjectDescription('" + alias + "')") Learn More
+				button(onclick="openProjectDescription('" + id + "')") Learn More
 
 block sectionTitle
 	h1 &#x1F4A1; PROJECTS

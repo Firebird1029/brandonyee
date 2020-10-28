@@ -284,6 +284,10 @@ p.subtitle {
 	-ms-overflow-style: none;
 }
 
+.project-panel img {
+	max-width: 100%;
+}
+
 /* hide scrollbar */
 .project-panel::-webkit-scrollbar {
 	width: 0;
