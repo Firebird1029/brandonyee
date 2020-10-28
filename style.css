@@ -12,9 +12,6 @@ body {
 /* General Style */
 p {
 	line-height: 1.5rem;
-}
-p,
-button {
 	font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 
@@ -49,13 +46,13 @@ h6 {
 button {
 	display: inline-block;
 	border: 2px solid #22278c;
-	border-radius: 5px;
-	padding: 0.7rem 1.7rem;
+	border-radius: 2px;
+	padding: 0.8rem 2.1rem;
 	margin: 0;
-	background-color: white;
+	background-color: inherit;
 	color: #22278c;
 
-	font-family: "Source Sans Pro", "Arial", sans-serif;
+	font-family: "Playfair Display", "Times New Roman", serif;
 	font-weight: 700;
 	text-decoration: none;
 	text-align: center;
@@ -63,21 +60,23 @@ button {
 
 	cursor: pointer;
 	outline: none;
-	transition: background 250ms ease-in-out, transform 150ms ease;
+	transition: background 250ms ease-in-out, border 250ms ease-in-out, transform 150ms ease;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
 
 button:hover {
-	background: #22278c;
-	/* color: white; */
+	transform: scale(1.005);
+	background: #afc5f5;
+	border-color: #afc5f5;
+	/* color: #e5eaf5; */
 
 	/*outline: 1px solid #fff;
 	outline-offset: -5px;*/
 }
 
 button:active {
-	transform: scale(0.99);
+	transform: scale(0.995);
 }
 
 p.spacer {
@@ -238,10 +237,6 @@ p.subtitle {
 	box-shadow: 9px 9px #ddd;
 }
 
-.project-preview-box button {
-	background-color: inherit;
-}
-
 .project-preview h1 {
 	font-size: 1.5rem;
 	margin-top: 0.5rem;
@@ -309,7 +304,6 @@ button.closeProjectDescriptionButton {
 	border: none;
 	background-color: inherit;
 	padding: 0.7rem 0.5rem;
-	font-family: "Playfair Display", "Times New Roman", serif;
 	font-size: 1rem;
 	font-weight: 600;
 }
