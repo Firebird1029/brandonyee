@@ -72,7 +72,7 @@ button {
 
 button:hover {
 	background: #22278c;
-	/* color: white; */
+	color: white;
 
 	/*outline: 1px solid #fff;
 	outline-offset: -5px;*/
@@ -93,6 +93,15 @@ p.unselectable {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+/* Color Helpers */
+.blue-text {
+	color: #22278c;
+}
+
+.green-text {
+	color: #076b03;
 }
 
 /* Page Layout */
@@ -195,9 +204,16 @@ p.subtitle {
 
 /* Left Side Styling */
 .sticky-content h1 {
-	color: #22278c;
 	font-weight: 600;
 	font-size: 2rem;
+}
+
+.sticky-blue > .sticky-content > h1 {
+	color: #22278c;
+}
+
+.sticky-green > .sticky-content > h1 {
+	color: #076b03;
 }
 
 /* Right Side Styling */

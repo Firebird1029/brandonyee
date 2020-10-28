@@ -30,9 +30,9 @@ html(lang="en")
 					h1 Brandon Yee
 				section
 					p.title.unselectable.animate__animated.animate__fadeIn
-						span(style="vertical-align: middle;") 👋 Hey, I"m Brandon, a student at Yale University studying computer science. I enjoy experimenting with automation, IoT, and different ways technology can uplift others.
+						span(style="vertical-align: middle;") 👋 Hey, I'm Brandon, an undergraduate student studying computer science. I enjoy experimenting with automation, IoT, and different ways technology can uplift others.
 					p.spacer
-					p.subtitle.animate__animated.animate__fadeIn.animate__delay-1s
+					//- p.subtitle.animate__animated.animate__fadeIn.animate__delay-1s
 						span *I am actively seeking internship or employment opportunities for Summer 2021. Please contact me 
 						a(style="opacity: 0.9; cursor: pointer;" onclick="scrollToID('contact')") here.
 				footer
@@ -46,9 +46,18 @@ html(lang="en")
 			div
 				section.row
 					.column.left
+						.sticky-wrapper.sticky-green
+							.sticky-content(data-aos="fade-in", data-aos-anchor-placement="top-center", data-aos-once="true")
+								h1 &#x1F3C4; ABOUT
+					#about.column.right(style="min-height: 100vh;")
+						div
+							p Coming soon!
+							p &#x1F4BC; You may find a list of my projects on this portfolio.
+				section.row
+					.column.left
 						.sticky-wrapper.sticky-blue
-							.sticky-content(data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-once="true")
-								h1 PROJECTS
+							.sticky-content(data-aos="fade-in", data-aos-anchor-placement="top-center", data-aos-once="true")
+								h1 &#x1F4A1; PROJECTS
 					#projects.column.right
 						//- div.project-preview>p.subtitle+p>h1{title}+a[href="#" target="_blank"]{FOO}^p.cover-image>img[src="assets/img/" width="50%"]^p{description}+p.spacer+p>button[onclick="openProjectDescription("")"]{Learn More}
 						//- Change var --project-preview-total in the CSS to change the counter.
@@ -123,7 +132,7 @@ html(lang="en")
 							p.spacer
 							p
 								button(onclick="openProjectDescription('facemasks')") Learn More
-				//--
+				//-
 					<section class="row">
 					<div class="column left">
 					<div class="sticky-wrapper sticky-green">
@@ -140,9 +149,9 @@ html(lang="en")
 					</section>
 				section.row
 					.column.left
-						.sticky-wrapper.sticky-blue
+						.sticky-wrapper.sticky-green
 							.sticky-content(data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-once="true")
-								h1 CONTACT
+								h1 &#x1F54A; CONTACT
 					#contact.column.right(style="min-height: 150vh;")
 						.hidden-touch(style="height: 30vh;")
 						div
