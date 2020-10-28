@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "pug --out ./ src/",
 		"dev": "npm-run-all -p dev-pug dev-bs",
-		"dev-pug": "pug --watch src/ --out ./ src/",
+		"dev-pug": "pug --watch src/ --out ./ src/ --obj src/pug.json -s",
 		"dev-pyserver": "python -m http.server",
 		"dev-bs": "browser-sync start --config bs-config.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
