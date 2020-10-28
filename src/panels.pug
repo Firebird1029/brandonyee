@@ -1,39 +1,13 @@
 //- article.project-panel#FOO-description[data-google=""]>button.closeProjectDescriptionButton>i.fas.fa-arrow-left+{&nbsp;&nbsp;Back}^div.iframe-outer-container>div.iframe-inner-container>iframe.project-content[frameborder="0" srcdoc="Loading..."]{Darn it, this website is not compatible with your browser yet.}
-article#distancethermo-description.project-panel(data-google="")
-	button.closeProjectDescriptionButton
-		i.fas.fa-arrow-left
-		span   Back
-	.iframe-outer-container
-		.iframe-inner-container
-			iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
-article#converge-description.project-panel(data-google="")
-	button.closeProjectDescriptionButton
-		i.fas.fa-arrow-left
-		span   Back
-	.iframe-outer-container
-		.iframe-inner-container
-			iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
-article#punschedule-description.project-panel(data-google="")
-	button.closeProjectDescriptionButton
-		i.fas.fa-arrow-left
-		span   Back
-	p.spacer
-	div
-		//- img#image(src="/assets/img/punschedule/sched.png" alt="" width="100%")
-	.iframe-outer-container
-		.iframe-inner-container
-			iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
-article#mahalograms-description.project-panel(data-google="")
-	button.closeProjectDescriptionButton
-		i.fas.fa-arrow-left
-		span Back
-	.iframe-outer-container
-		.iframe-inner-container
-			iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
-article#facemasks-description.project-panel(data-google="")
-	button.closeProjectDescriptionButton
-		i.fas.fa-arrow-left
-		span Back
-	.iframe-outer-container
-		.iframe-inner-container
-			iframe.project-content(src="" frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
+
+mixin projectPanel({alias, gdocLink})
+	article.project-panel(id=alias + "-description", data-google=gdocLink)
+		button.closeProjectDescriptionButton
+			i.fas.fa-arrow-left
+			span &nbsp; Back
+		.iframe-outer-container
+			.iframe-inner-container
+				iframe.project-content(frameborder="0" srcdoc="Loading...") Darn it, this website is not compatible with your browser yet.
+
+each project, index in PROJECTS
+	+projectPanel(project)
