@@ -226,7 +226,16 @@ p.subtitle {
 	background: lightgray;
 	background: #e5eaf5;
 	/* border-left: 4px solid #22278c; */
-	/* box-shadow: 9px 9px #ddd;*/
+
+	-webkit-transition: -webkit-box-shadow 0.75s ease;
+	transition: -webkit-box-shadow 0.75s ease;
+	-o-transition: box-shadow 0.75s ease;
+	transition: box-shadow 0.75s ease;
+	transition: box-shadow 0.75s ease, -webkit-box-shadow 0.75s ease;
+}
+
+.project-preview-box.project-preview-active {
+	box-shadow: 9px 9px #ddd;
 }
 
 .project-preview-box button {

@@ -27,9 +27,10 @@ function openProjectDescription(projectID) {
 	document.body.style.overflow = "hidden"; // lock scroll of body
 	document.body.style.paddingRight = getScrollbarWidth() + "px"; // preserve scrollbar width of body
 
-	const panel = document.getElementById("panel_" + projectID); // get panel by its ID
+	const panel = document.getElementById("panel_" + projectID); // get project panel by its ID
 	panel.style.display = "initial"; // display panel
 	animateCSS(panel, "slideInLeft"); // animate panel
+	document.getElementById("preview_" + projectID).classList.add("project-preview-active"); // add box-shadow to corresponding project preview
 }
 
 // Close Project Description Panel
@@ -45,6 +46,10 @@ function closeProjectDescription() {
 				document.body.style.paddingRight = "0px"; // preserve scrollbar width
 			});
 		}
+	});
+	const previews = document.querySelectorAll(".project-preview-box"); // remove box-shadow from all project previews
+	Array.prototype.forEach.call(previews, function (preview, i) {
+		preview.classList.remove("project-preview-active");
 	});
 }
 // Bind onclick listener to all close-project-buttons
