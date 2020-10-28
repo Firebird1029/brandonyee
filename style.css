@@ -12,6 +12,9 @@ body {
 }
 
 /* General Style */
+p {
+	line-height: 1.5rem;
+}
 p,
 button {
 	font-family: "Source Sans Pro", "Arial", sans-serif;
@@ -69,7 +72,7 @@ button {
 
 button:hover {
 	background: #22278c;
-	color: white;
+	/* color: white; */
 
 	/*outline: 1px solid #fff;
 	outline-offset: -5px;*/
@@ -200,7 +203,20 @@ p.subtitle {
 /* Right Side Styling */
 .project-preview {
 	text-align: left;
-	min-height: 80vh;
+	margin-bottom: 5rem;
+	/* min-height: 80vh; */
+}
+
+.project-preview-box {
+	padding: 2rem;
+	background: lightgray;
+	background: #e5eaf5;
+	/* border-left: 4px solid #22278c; */
+	/* box-shadow: 9px 9px #ddd;*/
+}
+
+.project-preview-box button {
+	background-color: inherit;
 }
 
 .project-preview h1 {
