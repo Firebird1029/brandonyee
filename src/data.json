@@ -1,0 +1,49 @@
+{
+	"PROJECTS": [
+		// Distance Thermometer
+		{
+			"title": "&#x1F6E1; Distance Thermometer",
+			"linkHref": "https://distancethermo.com/",
+			"linkText": "distancethermo.com",
+			"description": "Detect and monitor employee temperatures.",
+			"alias": "distancethermo"
+		},
+
+		// Converge
+		{
+			"title": "&#x26EA; Converge Church",
+			"linkHref": "https://convergehawaii.org/",
+			"linkText": "convergehawaii.org",
+			"imageSrc": "assets/img/converge.png",
+			"description": "A church website with live streaming, realtime video conferencing, dynamic rendering via Pug.js, interactive calendar, user-friendly spreadsheet-database system via Airtable, photo gallery, web form validation + sanitization, and responsive design.",
+			"alias": "converge"
+		},
+
+		// Punschedule
+		{
+			"title": "&#x1F4C5; Punschedule",
+			"imageSrc": "assets/img/punschedule.png",
+			"description": "Punschedule is an easy way for Punahou students to automatically generate, customize, and download their Punahou School distance learning schedules.",
+			"alias": "punschedule"
+		},
+		// linkHref: "https://punschedule.com/",
+		// linkText: "punschedule.com",
+
+		// Mahalograms
+		{
+			"title": "&#x1F48C; Mahalograms",
+			"imageSrc": "assets/img/mahalograms.jpg",
+			"description": "Mahalograms allows students to send virtual thank you cards at the end of the school year to fellow students and teachers.",
+			"alias": "mahalograms"
+		},
+		// linkHref: "https://mahalograms.punschedule.com/",
+		// linkText: "mahalograms.punschedule.com",
+
+		// Face Masks
+		{
+			"title": "&#x1F637; Face Masks for Hawaii",
+			"description": "Give, receive, and exchange face masks with nearby community members.",
+			"alias": "facemasks"
+		}
+	]
+}
