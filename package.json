@@ -4,7 +4,7 @@
 	"description": "https://brandonyee.io",
 	"scripts": {
 		"build": "npm run clean && pug --out ./ src/ --obj src/data.jsonc",
-		"clean": "rm *.html */*.html",
+		"clean": "rm -f *.html */*.html",
 		"dev": "npm-run-all -p dev-pug dev-bs",
 		"dev-pug": "pug --watch src/ --out ./ src/ --obj src/data.jsonc -s",
 		"dev-pyserver": "python -m http.server",
