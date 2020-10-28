@@ -3,9 +3,10 @@
 	"version": "1.0.0",
 	"description": "https://brandonyee.io",
 	"scripts": {
-		"build": "pug --out ./ src/",
+		"build": "npm run clean && pug --out ./ src/ --obj src/data.jsonc",
+		"clean": "rm *.html */*.html",
 		"dev": "npm-run-all -p dev-pug dev-bs",
-		"dev-pug": "pug --watch src/ --out ./ src/ --obj src/data.json -s",
+		"dev-pug": "pug --watch src/ --out ./ src/ --obj src/data.jsonc -s",
 		"dev-pyserver": "python -m http.server",
 		"dev-bs": "browser-sync start --config bs-config.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
