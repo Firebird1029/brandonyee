@@ -15,9 +15,9 @@ module.exports = {
 	ui: {
 		port: 3001
 	},
-	files: false,
+	files: ["index.html", "style.css", "script.js"],
 	watchEvents: ["change"],
-	watch: true,
+	watch: false,
 	ignore: ["src/*"],
 	single: false,
 	watchOptions: {
