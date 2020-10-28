@@ -7,8 +7,6 @@
 body {
 	margin: 0px;
 	font-family: "Source Sans Pro", "Arial", sans-serif;
-
-	counter-reset: projectPreviewCount;
 }
 
 /* General Style */
@@ -246,13 +244,6 @@ p.subtitle {
 	border-bottom: 0.2rem solid #22278c;
 	padding-bottom: 1rem;
 	margin-right: 80%;
-}
-
-.project-preview p.subtitle::after {
-	/* Display n / n for each project preview */
-	--project-preview-total: "5";
-	counter-increment: projectPreviewCount;
-	content: counter(projectPreviewCount) " / " var(--project-preview-total);
 }
 
 .project-preview p.cover-image {
