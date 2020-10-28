@@ -45,7 +45,7 @@ h6 {
 
 button {
 	display: inline-block;
-	border: 2px solid #22278c;
+	border: 0px solid #22278c;
 	border-radius: 2px;
 	padding: 0.8rem 2.1rem;
 	margin: 0;
@@ -221,7 +221,7 @@ p.subtitle {
 }
 
 .project-preview-box {
-	padding: 2rem;
+	padding: 2rem 2rem 0.2rem;
 	background: lightgray;
 	background: #e5eaf5;
 	/* border-left: 4px solid #22278c; */
