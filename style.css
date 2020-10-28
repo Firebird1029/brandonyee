@@ -271,7 +271,6 @@ p.subtitle {
 
 	margin: 1rem;
 	border-left: 4px solid #22278c;
-	padding: 1rem;
 
 	background: #eee;
 	box-shadow: 9px 9px #ddd;
@@ -282,6 +281,18 @@ p.subtitle {
 	overflow-y: scroll;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
+}
+
+.project-panel > header {
+	position: fixed;
+	width: calc(50% - 2rem - 17px - 4px); /* same width as .project-panel MINUS border */
+	background: inherit;
+	padding: 1rem;
+}
+
+.project-panel .project-content {
+	margin-top: 3rem;
+	padding: 1rem;
 }
 
 .project-panel img {
@@ -301,7 +312,6 @@ button.closeProjectDescriptionButton {
 	font-family: "Playfair Display", "Times New Roman", serif;
 	font-size: 1rem;
 	font-weight: 600;
-	margin-bottom: 1rem;
 }
 button.closeProjectDescriptionButton:hover {
 	background: #ddd;
@@ -353,6 +363,10 @@ iframe.project-content {
 	/* Project Description Panels */
 	.project-panel {
 		width: calc(100% - 2rem);
+	}
+
+	.project-panel > header {
+		width: calc(100% - 2rem - 4px); /* same width as .project-panel MINUS border */
 	}
 }
 

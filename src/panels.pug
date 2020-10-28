@@ -2,9 +2,11 @@
 
 mixin projectPanel({id})
 	article.project-panel(id="panel_" + id)
-		button.closeProjectDescriptionButton
-			i.fas.fa-arrow-left
-			span &nbsp; Back
+		header
+			button.closeProjectDescriptionButton
+				i.fas.fa-arrow-left
+				span &nbsp; Back
+		p.spacer
 		.project-content
 			p Sorry, this page is still being written! &nbsp; &#x1F613;
 		//- (frameborder="0" srcdoc="Loading...") 
