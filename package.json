@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "https://brandonyee.io",
 	"scripts": {
-		"build": "npm run clean && pug --out ./ src/ --obj src/data.jsonc",
+		"build": "npm run clean && pug --out build/ src/ --obj src/data.jsonc",
 		"clean": "rm *.html */*.html",
 		"dev": "npm-run-all -p dev-pug dev-bs",
 		"dev-pug": "pug --watch src/ --out ./ src/ --obj src/data.jsonc -s",
