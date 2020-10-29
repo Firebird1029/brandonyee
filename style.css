@@ -468,4 +468,8 @@ iframe.project-content {
 	#contactSocial {
 		text-align: center;
 	}
+
+	.turtle-parallax {
+		background: none;
+	}
 }
