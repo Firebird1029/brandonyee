@@ -1,0 +1,15 @@
+//- article.project-panel#FOO-description[data-google=""]>button.closeProjectDescriptionButton>i.fas.fa-arrow-left+{&nbsp;&nbsp;Back}^div.iframe-outer-container>div.iframe-inner-container>iframe.project-content[frameborder="0" srcdoc="Loading..."]{Darn it, this website is not compatible with your browser yet.}
+
+mixin projectPanel({id})
+	article.project-panel(id="panel_" + id)
+		header
+			button.closeProjectDescriptionButton
+				i.fas.fa-arrow-left
+				span &nbsp; Back
+		p.spacer
+		.project-content
+			p Sorry, this page is still being written! &nbsp; &#x1F613;
+		//- (frameborder="0" srcdoc="Loading...") 
+
+each project, index in PROJECTS
+	+projectPanel(project)

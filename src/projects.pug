@@ -1,0 +1,27 @@
+extends template/section-blue.pug
+
+mixin projectPreview(index, {title, linkHref, linkText, imageSrc, description, id})
+	.project-preview
+		.project-preview-box(id="preview_" + id)
+			p.subtitle!= index+1 + "&nbsp; / &nbsp;" + PROJECTS.length
+			br
+			h1!= title
+			if linkHref && linkText
+				a(href=linkHref, target="_blank" style="margin-bottom: 1.5rem;")!= linkText
+			if imageSrc
+				p.cover-image
+					img(src=imageSrc alt="" width="50%")
+			p!= description
+			p.spacer
+			p(style="text-align: center;")
+				button(onclick="openProjectDescription('" + id + "')") - Learn More -
+
+block sectionTitle
+	h1 &#x1F4A1; PROJECTS
+
+block sectionBody
+	#projects
+		//- Change var --project-preview-total in the CSS to change the counter.
+
+		each project, index in PROJECTS
+			+projectPreview(index, project)
