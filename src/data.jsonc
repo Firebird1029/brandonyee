@@ -14,7 +14,7 @@
 			"title": "&#x26EA; Converge Church",
 			"linkHref": "https://convergehawaii.org/",
 			"linkText": "convergehawaii.org",
-			"imageSrc": "assets/img/converge.png",
+			"imageSrc": "assets/img/converge/converge.png",
 			"description": "A church website with live streaming, dynamic rendering via Pug.js, interactive calendar, user-friendly spreadsheet-database system via Airtable, photo gallery, web form validation, and responsive design.",
 			"id": "converge"
 		},
