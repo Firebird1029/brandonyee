@@ -15,9 +15,10 @@ mixin projectPreview(index, {title, linkHref, linkText, imageSrc, description, i
 			p.spacer
 			p(style="text-align: center;")
 				button(onclick="openProjectDescription('" + id + "')") - Learn More -
+			.project-preview-box-end
 
 block sectionTitle
-	h1 &#x1F4A1;
+	h1 &#x1F4A1;&nbsp;
 		span.underline PROJECTS
 
 block sectionBody

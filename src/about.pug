@@ -1,7 +1,7 @@
 extends template/section-green.pug
 
 block sectionTitle
-	h1 &#x1F3C4;
+	h1 &#x1F3C4;&nbsp;
 		span.underline ABOUT
 
 block sectionBody
@@ -10,8 +10,11 @@ block sectionBody
 		div.unselectable
 			.centered-touch: img(src="assets/img/me.png" style="max-width: 100px; margin-top: 2rem;")
 			p.spacer &nbsp;
-			p I write software. I believe innovative ideas by themselves cannot stand alone; instead, ideas must seek to influence the world in positive, meaningful ways.
+			p I write software. My thoughts: innovative ideas by themselves cannot stand alone; instead, ideas must seek to influence the world in positive, meaningful ways. &nbsp;&nbsp;&#x1F331;
 			p.spacer
-			p On the weekends, I like to hike, read, and eat vanilla ice cream. &#x1F368;
-			//- p &#x1F4BC; You may find a list of my projects on this portfolio.
-		.hidden-touch(style="height: 100vh;")
+			p When I'm not writing software || debugging 500's || grinding Leetcode, I like to hike, surf, and eat vanilla ice cream. &nbsp;&nbsp;&#x1F368;
+			p.spacer
+			p
+				| Some of my personal projects are listed below.
+				| For details on my professional work experience, I'm happy to share my #[a.green-text(style="cursor: pointer;" onclick="scrollToID('contact')") resume]. &nbsp;&nbsp;&#x1F680;
+		.hidden-touch(style="height: 80vh;")
