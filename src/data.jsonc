@@ -9,6 +9,13 @@
 			"id": "distancethermo"
 		},
 
+		// Python CSV Parser
+		{
+			"title": "&#x1F4CA; Python CSV Parser",
+			"description": "Parse a CSV file for work hours and overtime.",
+			"id": "csvparser"
+		},
+
 		// Converge
 		{
 			"title": "&#x26EA; Converge Church",
@@ -19,6 +26,14 @@
 			"id": "converge"
 		},
 
+		// KhanAcademy Solver
+		{
+			"title": "&#x1F333; KhanAcademy Solver",
+			"imageSrc": "https://i.pcmag.com/imagery/reviews/07AxdIVbQ63OEkJoPgCybXt-19..1594914797.png",
+			"description": "A Chrome extension that adds keyboard shortcuts to the Khan Academy website and auto-solves math problems.",
+			"id": "khansolver"
+		},
+
 		// Punschedule
 		{
 			"title": "&#x1F4C5; Punschedule",
@@ -26,8 +41,14 @@
 			"description": "An easy way for high school students to automatically generate, customize, and download their distance learning schedules.",
 			"id": "punschedule"
 		}
-		// linkHref: "https://punschedule.com/",
-		// linkText: "punschedule.com",
+
+		// Robotics Lights
+		// {
+		// 	"title": "&#x1F6A5; Robotics Lights",
+		// 	// "imageSrc": "",
+		// 	"description": "Simple LED strip patterns on a robot.",
+		// 	"id": "frclights"
+		// }
 
 		// Mahalograms
 		// {
