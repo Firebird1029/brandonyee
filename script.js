@@ -7,6 +7,27 @@ function scrollToID(id) {
 	contact.scrollIntoView({ behavior: "smooth" });
 }
 
+// Show NPM Meme
+function showNPMmeme() {
+	if (!document.getElementById("npmMeme").children.length) {
+		// show meme video
+		const video = document.createElement("video");
+		video.setAttribute("width", 320);
+		video.setAttribute("autoplay", true);
+		video.setAttribute("muted", true);
+		video.style.maxWidth = "100%"; // for mobile screens
+		video.muted = true; // fix mute glitch
+		const source = document.createElement("source");
+		source.setAttribute("src", "/assets/npm_meme.mp4");
+		source.setAttribute("type", "video/mp4");
+		video.appendChild(source);
+		document.getElementById("npmMeme").appendChild(video);
+	} else {
+		// hide meme video
+		document.getElementById("npmMeme").removeChild(document.getElementById("npmMeme").firstChild);
+	}
+}
+
 // Keyboard Listeners to Close Project Description
 // https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery
 document.onkeydown = function (evt) {
