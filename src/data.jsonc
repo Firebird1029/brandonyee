@@ -9,6 +9,13 @@
 			"id": "distancethermo"
 		},
 
+		// Python CSV Parser
+		{
+			"title": "&#x1F4CA; Python CSV Parser",
+			"description": "Parse a CSV file for work hours and overtime.",
+			"id": "csvparser"
+		},
+
 		// Converge
 		{
 			"title": "&#x26EA; Converge Church",
