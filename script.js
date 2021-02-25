@@ -1,6 +1,9 @@
 // AOS
 AOS.init();
 
+// Highlight.js
+hljs.highlightAll();
+
 // Scrolling to Element on Page By DOM ID
 function scrollToID(id) {
 	const contact = document.getElementById(id);
@@ -90,6 +93,8 @@ async function produceProjectContent(projectPanel) {
 			const converter = new showdown.Converter(); // create new showdown converter instance
 			// make HTML from the XML response text, then set the project panel content to the newly-made HTML
 			projectPanel.querySelector(".project-content").innerHTML = converter.makeHtml(request.responseText);
+
+			hljs.highlightAll();
 		}
 	};
 	request.send(); // start async XML request
