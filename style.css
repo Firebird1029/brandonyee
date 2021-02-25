@@ -295,6 +295,11 @@ p.subtitle {
 	text-align: center;
 }
 
+p.cover-image img {
+	width: auto;
+	max-height: 15rem;
+}
+
 .project-preview-box-end {
 	border-bottom: 0.2rem solid #22278c;
 }
