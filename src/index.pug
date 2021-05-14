@@ -7,15 +7,15 @@ html(lang="en")
 			<nav>
 			<a href="#projects">Projects</a>
 			</nav>
-		article
+		article#gradient-background
 			include hero.pug
 			include about.pug
 			include projects.pug
 			include contact.pug
 
-			.hidden-touch(style="width: 100%; text-align: center;")
+		.turtle-parallax.hidden-touch
+			div(style="width: 100%; text-align: center; position: fixed; bottom: 0; z-index: -1;")
 				h3.unselectable Brandon Yee
-			.turtle-parallax
 
 		include panels.pug
 

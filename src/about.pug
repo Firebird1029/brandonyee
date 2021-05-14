@@ -1,4 +1,4 @@
-extends template/section-green.pug
+extends template/section-blue.pug
 
 block sectionTitle
 	h1 &#x1F3C4;&nbsp;
@@ -6,16 +6,16 @@ block sectionTitle
 
 block sectionBody
 	#about
-		.hidden-touch(style="height: 30vh;")
+		.hidden-touch(style="height: 20vh;")
 		div.unselectable
 			.centered-touch: img(src="assets/img/me.png" style="max-width: 100px; margin-top: 2rem;")
-			p.spacer &nbsp;
-			p I write software. My thoughts: innovative ideas by themselves cannot stand alone; instead, ideas must seek to influence the world in positive, meaningful ways. &nbsp;&nbsp;&#x1F331;
 			p.spacer
-			p When I'm not writing software || debugging 500's || #[a.green-text(href="#" onclick="showNPMmeme(); return false;") waiting for npm], I like to hike, surf, and eat vanilla ice cream. &nbsp;&nbsp;&#x1F368;
+			p I write software. I believe innovative ideas by themselves cannot stand alone; instead, ideas must seek to influence the world in positive, meaningful ways. &nbsp;&nbsp;&#x1F331;
+			p.spacer
+			p When I'm not writing software || debugging 500's || #[a(href="#" onclick="showNPMmeme(); return false;") waiting for npm], I like to hike, swim, and eat ice cream. &nbsp;&nbsp;&#x1F368;
 			p.spacer
 			p
 				| Some of my personal projects are listed below.
-				| For details on my professional work experience, I'm happy to share my #[a.green-text(style="cursor: pointer;" onclick="scrollToID('contact')") resume]. &nbsp;&nbsp;&#x1F680;
+				| For details on my professional work experience, I'm happy to share my #[a(style="cursor: pointer;" onclick="scrollToID('contact')") resume] via email. &nbsp;&nbsp;&#x1F680;
 		div#npmMeme
-		.hidden-touch(style="height: 80vh;")
+		.hidden-touch(style="height: 30vh;")

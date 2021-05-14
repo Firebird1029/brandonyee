@@ -18,6 +18,7 @@ function showNPMmeme() {
 		video.setAttribute("width", 320);
 		video.setAttribute("autoplay", true);
 		video.setAttribute("muted", true);
+		video.style.margin = "1rem";
 		video.style.maxWidth = "100%"; // for mobile screens
 		video.muted = true; // fix mute glitch
 		const source = document.createElement("source");
@@ -52,28 +53,40 @@ function openProjectDescription(projectID) {
 	document.body.style.paddingRight = getScrollbarWidth() + "px"; // preserve scrollbar width of body
 
 	const panel = document.getElementById("panel_" + projectID); // get project panel by its ID
+
+	const xButton = document.querySelector(".closeProjectDescriptionButtonContainer");
+	xButton.style.display = "initial";
+	panel.appendChild(xButton);
+
 	panel.style.display = "initial"; // display panel
-	animateCSS(panel, "slideInLeft"); // animate panel
-	document.getElementById("preview_" + projectID).classList.add("project-preview-active"); // add box-shadow to corresponding project preview
+	// animate panel
+	animateCSS(panel, "slideInRight").then(() => {
+		document.body.appendChild(xButton);
+		xButton.style.top = "calc(2rem + 1px)";
+		xButton.style.right = "calc(2rem + 1px)";
+	});
 }
 
 // Close Project Description Panel
 function closeProjectDescription() {
 	const panels = document.querySelectorAll(".project-panel"); // close all panels
+
+	const xButton = document.querySelector(".closeProjectDescriptionButtonContainer");
+
 	Array.prototype.forEach.call(panels, function (panel, i) {
 		if (panel.style.display === "initial") {
+			panel.appendChild(xButton);
+			xButton.style.top = "1rem";
+			xButton.style.right = "1rem";
+
 			// if this panel is the one shown, then animate it out
-			animateCSS(panel, "slideOutLeft").then(() => {
+			animateCSS(panel, "slideOutRight").then(() => {
 				panel.style.display = "none";
 
 				document.body.style.overflow = "initial"; // unlock scroll
 				document.body.style.paddingRight = "0px"; // preserve scrollbar width
 			});
 		}
-	});
-	const previews = document.querySelectorAll(".project-preview-box"); // remove box-shadow from all project previews
-	Array.prototype.forEach.call(previews, function (preview, i) {
-		preview.classList.remove("project-preview-active");
 	});
 }
 // Bind onclick listener to all close-project-buttons
